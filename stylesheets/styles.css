@@ -6,15 +6,16 @@
 }
 
 p {
-    font-size: 1.7em; /* 14px */
+    font-size: 1.7rem; /* 14px */
 }
 
 .titleText{
     font-weight: 500;
+    font-size: 3.7vw;
 }
 
 .germanheader {
-    font-size: inherit;
+    font-size: 3.7vw;
     background: -webkit-linear-gradient(-45deg, #000000, #DD0000, #FFCE00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +31,6 @@ p {
 }
 
 .headerText{
-    font-size: 3.7vw;
     position: absolute;
     margin-top: 4%;
     top: 45%;
@@ -43,7 +43,7 @@ p {
 
 .headingsubtext{
     padding-top: 3%;
-    font-size: .35em;
+    font-size: 1rem;
     font-weight: 400;
     max-width: 43%;
     margin-right: 10%;
@@ -111,7 +111,29 @@ font-size: 22px;
 }
 
 @media screen and (max-width: 500px) {
-    .coverImage{
-        display: none;
+    .headerText{
+        font-size: 5.7vw;
+        position: absolute;
+        margin-top: 4%;
+        top: 45%;
+        text-align: center;
+        transform: translateY(-75%);
+        padding: 30px; 
+    
+    }
+
+    .headingsubtext{
+        padding-top: 3%;
+        font-size: .7rem;
+        font-weight: 500;
+        max-width: 100%;
+        margin-right: 15%;
+        margin-left: 15%;
+        text-align: center;
+    }
+
+
+    .headImage{
+        filter: blur(.2rem);
     }
 }
